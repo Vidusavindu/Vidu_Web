@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Family Galaxy By Savindu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqk1w2/knoG80kXw58+CPaeJ7K+xaQ0q+t60D0EYg3QGP+cImglIbqS+hRm0PK6R7WLVNG69w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -13,6 +14,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
@@ -28,27 +31,10 @@
       text-align: center;
     }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .col-md-4 {
-      flex: 1 0 33.33%;
-      padding: 0 10px;
-    }
-
-    h1, h2 {
-      margin-top: 0;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
-    h2 {
-      font-size: 2em;
+    header .logo h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #e0e0e0;
     }
 
     nav ul {
@@ -64,8 +50,31 @@
 
     nav a {
       text-decoration: none;
-      color: #fff;
+      color: #e0e0e0;
       font-weight: bold;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .col-md-4 {
+      flex: 1 0 33.33%;
+      padding: 10px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2em;
     }
 
     .section {
@@ -73,6 +82,18 @@
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #e0e0e0;
+      padding: 20px;
+      text-align: center;
     }
 
     /* Responsive styles */
@@ -93,7 +114,9 @@
 
   <header>
     <div class="container">
-      <h1>Welcome to Family Galaxy!</h1>
+      <div class="logo">
+        <h1>Savindu</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Family Universe</a></li>
@@ -110,17 +133,20 @@
         <h2>Family Universe</h2>
         <div class="row">
           <div id="family-tree" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Family Tree">
+            <img src="https://via.placeholder.com/300" alt="Family Tree">
           </div>
           <div id="family-events" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Family Events">
+            <img src="https://via.placeholder.com/300" alt="Family Events">
           </div>
           <div id="message-center" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Message Center">
+            <img src="https://via.placeholder.com/300" alt="Message Center">
           </div>
         </div>
         <div id="photo-gallery" class="row">
-          </div>
+          <div class="col-md-4"><img src="https://via.placeholder.com/300" alt="Photo 1"></div>
+          <div class="col-md-4"><img src="https://via.placeholder.com/300" alt="Photo 2"></div>
+          <div class="col-md-4"><img src="https://via.placeholder.com/300" alt="Photo 3"></div>
+        </div>
       </div>
     </section>
 
@@ -129,13 +155,13 @@
         <h2>Classwork Launchpad</h2>
         <div class="row">
           <div id="subject-planets" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Subject Planets">
+            <img src="https://via.placeholder.com/300" alt="Subject Planets">
           </div>
           <div id="resource-rocket" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Resource Rocket">
+            <img src="https://via.placeholder.com/300" alt="Resource Rocket">
           </div>
           <div id="progress-tracker" class="col-md-4">
-            <img src="https://cdn.pixabay.com/photo/2017/11/12/17/11/galaxy-2945839_960_720.jpg" alt="Progress Tracker">
+            <img src="https://via.placeholder.com/300" alt="Progress Tracker">
           </div>
         </div>
         <div id="collaboration-zone" class="row">
@@ -146,9 +172,10 @@
 
   <footer>
     <div class="container">
-      <p>© 2024 Owner Savindu</p>
+      <p>© 2024 Owner Savindu <i class="fa-solid fa-copyright"></i></p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
